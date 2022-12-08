@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+<!--{% load static %}-->
+{% block page_content %}
+<nav>
+    <a href="{% url 'register user' %}">Създай профил</a>
+    <a href="{% url 'login user' %}">За да влезете</a>
+</nav>
+
+<nav>
+    <a href="{% url 'dry construction products' %}">Сухо стоителство</a>
+    <a href="{% url 'thermal insulation products' %}">Топлоизолация</a>
+    <a href="{% url 'water supply nand sanitation products' %}">ВиК</a>
+    <a href="{% url 'construction chemistry products' %}">Строителна Химия</a>
+    <a href="{% url 'tools products' %}">Инструменти</a>
+    <a href="{% url 'painting products' %}">Бояджииство</a>
+    <a href="{% url 'show partners' %}">Партньори</a>
+    <a href="{% url 'contact page' %}">Контакти</a>
+</nav>
+{% endblock %}
